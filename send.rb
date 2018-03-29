@@ -8,6 +8,6 @@ conn.start
 
 channel = conn.create_channel
 queue = channel.queue("hello")
-channel.default_exchange.publish("Hello!!", :routing_key => queue.name)
+channel.default_exchange.publish("My message!!", routing_key: queue.name)
 puts " [x] Sent 'Hello!!'"
 conn.close
