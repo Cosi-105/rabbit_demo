@@ -5,7 +5,7 @@
 
 #### Install and run rabbitmq
 * homebrew: `brew install rabbitmq`
-* start: `rabbitmq-server`
+* `brew services restart rabbitmq`
 
 #### What to run
 * Run send.rb in one window
